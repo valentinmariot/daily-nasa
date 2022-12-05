@@ -1,0 +1,141 @@
+// --- C O L O R S --- //
+
+// PRIMARY
+$--primary: #b794f4;
+$--primary_hover: #7e5b9f;
+$--primary_active: #c9b6f4;
+$--primary_opacity: #c9b6f480;
+$--primary_transparent: #b794f400;
+
+// SECONDARY
+$--secondary: #1cc6d9;
+$--secondary_hover: #107682;
+$--secondary_active: #76dce8;
+$--secondary_transparent: #1cc6d900;
+
+// GENERALS
+$--white: #fff;
+$--egg: #f6f6f6;
+$--nero: #333;
+$--black: #222;
+$--vanta: #000;
+$--grey: #d3d3d3;
+$--davy: #555;
+$--chalice: #b1b1b1;
+$--silver: #7f7f7f;
+
+// TRANSPARENTS
+$--vanta20: #33333333;
+$--vanta45: #33333373;
+$--vanta80: #333333cc;
+$--grey20: #d3d3d333;
+$--grey45: #d3d3d373;
+$--grey80: #d3d3d3cc;
+$--egg20: #f6f6f633;
+$--egg45: #f6f6f673;
+$--egg80: #f6f6f6cc;
+
+// INFO STATE
+$--info: #5490fa;
+$--info_hover: #325696;
+$--info_active: #70798a;
+
+// VALID STATE
+$--valid: #63e3a3;
+$--valid_hover: #3a7e3e;
+$--valid_active: #a0e4a4;
+
+// ALERT STATE
+$--alert: #f8ca1a;
+$--alert_hover: #94790f;
+$--alert_active: #fadf75;
+
+// ERROR STATE
+$--error: #ff4d4c;
+$--error_hover: #992e2d;
+$--error_active: #ff9493;
+
+// COLORS - FUNCTIONS
+$--aquarius: #00d2ff;
+$--aquila: #caf0f8;
+$--draco: #39ffab;
+$--canis: #4361ee;
+$--capricornus: #f72585;
+$--cassiopeia: #ffbf69;
+$--cepheus: #61d368;
+$--corona: #4895ef;
+$--crux: #a161d5;
+$--cygnus: #3f37c9;
+$--gemini: #ff006e;
+$--leo: #ff8559;
+$--libra: #3a86ff;
+$--lynx: #0081af;
+$--metamask: #F5841F;
+$--orion: #7209b7;
+$--perseus: #4cc9f0;
+$--puppis: #90e0ef;
+$--scorpius: #ff6f91;
+$--serpens: #ed68b5;
+$--taurus: #fb5607;
+$--ursa: #ff9f1c;
+$--virgo: #8338ec;
+
+$--transparent: #fff0;
+$--input-bg-color-transparent: #fff0;
+$--input-border-color-transparent: #d3d3d300;
+
+// Main colors
+$--main-bg-color: $--egg;
+$--main-font-color: $--nero;
+$--main-font-hover-color: $--vanta;
+$--main-focus-color: $--primary;
+
+// Input colors
+$--input-bg-color: $--white;
+$--input-border-color: $--grey;
+$--input-active-color: $--chalice;
+$--segmented-control-border-color: $--davy;
+$--segmented-control-font-color: $--nero;
+
+// Toolbar colors
+$--toolbar-bg-color: $--vanta;
+$--toolbar-bg-color-hover: $--nero;
+$--toolbar-font-color: $--white;
+
+// Grey Icons Color
+$--grey-icon-color: $--silver;
+$--grey-icon-color_hover: $--davy;
+$--grey-icon-color_active: $--grey;
+
+
+
+// FUTUR DARK MODE ?
+// .theme--dark {
+//     // Transparence here for safari's sake
+//     $--transparent: #0000;
+//     $--input-bg-color-transparent: #3330;
+//     $--input-border-color-transparent: #5550;
+
+//     // Main colors
+//     $--main-bg-color: $--black;
+//     $--main-font-color: $--white;
+//     $--main-font-hover-color: $--egg;
+//     $--main-focus-color: $--primary;
+
+//     // Input colors
+//     $--input-bg-color: $--nero;
+//     $--input-border-color: $--davy;
+//     $--input-active-color: $--silver;
+//     $--segmented-control-border-color: $--silver;
+//     $--segmented-control-font-color: $--egg;
+
+//     // Toolbar colors
+//     $--toolbar-bg-color: $--white;
+//     $--toolbar-bg-color-hover: $--grey;
+//     $--toolbar-font-color: $--nero;
+
+//     // Grey Icons Color
+//     $--grey-icon-color: $--silver;
+//     $--grey-icon-color_hover: $--grey;
+//     $--grey-icon-color_active: $--davy;
+// }

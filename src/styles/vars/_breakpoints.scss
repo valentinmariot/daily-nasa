@@ -1,0 +1,55 @@
+// --- B R E A K P O I N T S --- //
+
+$--smartphone-small: 320px;
+$--smartphone: 390px;
+$--a4: 595px;
+$--tablet: 780px;
+$--tablet-landscape: 970px;
+$--laptop: 1200px;
+$--desktop: 1440px;
+
+/* Extra small devices (smartphone-small, less than 320px) */
+/* No media query needed */
+  
+/* Small devices (tablets, 390px and up) */
+@mixin smartphone {
+    @media (min-width: $--smartphone) {
+        @content;
+    }
+}
+
+/* Spetial devices (A4, 595px and up) */
+@mixin a4 {
+    @media (min-width: $--a4) {
+        @content;
+    }
+}
+
+/* Small devices (tablets, 780px and up) */
+@mixin tablet {
+    @media (min-width: $--tablet) {
+        @content;
+    }
+}
+  
+/* Medium devices (tablet-landscape, 970px and up) */
+@mixin tablet-landscape {
+    @media (min-width: $--tablet-landscape) {
+        @content;
+    }
+}
+  
+/* Large devices (laptop, 1200px and up) */
+@mixin laptop {
+    @media (min-width: $--laptop) {
+        @content;
+    }
+}
+
+/* Large devices (desktop, 1440px and up) */
+@mixin desktop {
+    @media (min-width: $--desktop) {
+        @content;
+    }
+}
+

@@ -1,0 +1,45 @@
+// --- M I X I N S --- //
+
+// SPACING
+$--1m: 8px;
+$--2m: calc(2 * $--1m);
+$--3m: calc(3 * $--1m);
+$--4m: calc(4 * $--1m);
+$--5m: calc(5 * $--1m);
+$--10m: calc(2 * $--5m);
+
+// SIZES
+$--xs: 12px;
+$--s: 16px;
+$--m: 20px;
+$--l: 24px;
+$--xl: 30px;
+$--xxl: 36px;
+$--3xl: 64px;
+$--4xl: 128px;
+
+// EFFECTS
+@mixin spin($duration: 5000ms, $from: 0deg, $to: 360deg) {
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    animation-name: spin;
+    animation-timing-function: linear;
+    user-select: none;
+    @keyframes spin {
+        from { transform:rotate($from); }
+        to { transform:rotate($to); }
+    }
+}
+
+@mixin glassMorphism(
+    $bg-color: $--vanta80,
+    $blur: 1.5px,
+    $border-color: $--vanta20,
+    $boxShadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+) {
+    background: $bg-color;
+    border: 1px solid $border-color;
+    box-shadow: $boxShadow;
+    backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur);
+}
