@@ -9,7 +9,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -17,7 +17,6 @@
     "jsx": "react-jsx",
     "paths": {
       "@/vars": ["./src/styles/vars/index.scss"],
-      "@/_pages/*": ["./src/styles/_pages/*"],
       "@/components/*": ["./src/components/*"],
     }
   },
