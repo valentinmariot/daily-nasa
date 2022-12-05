@@ -17,6 +17,7 @@
     "jsx": "react-jsx",
     "paths": {
       "@/vars": ["./src/styles/vars/index.scss"],
+      "@/fonts": ["./public/fonts/*"],
       "@/components/*": ["./src/components/*"],
     }
   },

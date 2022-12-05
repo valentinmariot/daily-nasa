@@ -7,8 +7,8 @@ import About from "./views/About";
 
 const App: FC = () => {
   
-const NasaKey = import.meta.env.VITE_NASA_KEY;
-console.log('NasaKey', NasaKey);
+// const NasaKey = import.meta.env.VITE_NASA_KEY;
+// console.log('NasaKey', NasaKey);
 
   return (
     <Router>
