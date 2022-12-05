@@ -25,7 +25,9 @@ const Home: FC = () => {
   return (
     <div>
       <h1>{data?.title}</h1>
-      <p>{data?.title}</p>
+      <p>{data?.explanation}</p>
+      <p>{data?.date}</p>
+      <p>{data?.copyright}</p>
       <img src={data?.url} alt={data?.title} />
     </div>
   );
