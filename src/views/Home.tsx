@@ -26,7 +26,7 @@ const Home: FC = () => {
     <div>
       <h1>{data?.title}</h1>
       <p>{data?.title}</p>
-      <img src={data?.hdurl} alt="NASA APOD" />
+      <img src={data?.url} alt={data?.title} />
     </div>
   );
 };
