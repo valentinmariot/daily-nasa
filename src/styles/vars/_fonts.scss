@@ -1,12 +1,11 @@
 // --- F O N T S --- //
 
 // VARIABLES
-$--main-font: 'Helvetica', sans-serif;
-$--second-font: 'Roboto', sans-serif;
-$--header-font: 'Nicomoji', sans-serif;
-$--title-font: 'Punc', sans-serif;
-$--sub-title-font: 'Oscura', sans-serif;
-$--barcode-font: 'LibreBarCode', sans-serif;
+$--helvetica: 'Helvetica', sans-serif;
+$--roboto: 'Roboto', sans-serif;
+$--nicomoji: 'Nicomoji', sans-serif;
+$--punc: 'Punc', sans-serif;
+$--oscura: 'Oscura', sans-serif;
 
 // IMPORTS
 @font-face {
@@ -16,15 +15,6 @@ $--barcode-font: 'LibreBarCode', sans-serif;
     font-variant: normal;
     font-weight: 300;
     src: url('../fonts/Helvetica.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: LibreBarCode;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    src: url('../fonts/LibreBarCode.woff2') format('woff2');
 }
 
 @font-face {
