@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/vars": ["./src/styles/vars/index.scss"],
+            "@/fonts/*": ["public/fonts/*"],
+            "@/components/*": ["./src/components/*"],
+            "@/utils/*": ["./src/utils/*"],
+            "@/globalStyles": ["./src/styles/globals.scss"],
+          }
+    }
+}
