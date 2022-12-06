@@ -1,35 +1,17 @@
-import { FC, useEffect, useState } from 'react';
-
-interface IData {
-  copyright: string;
-  date: string;
-  explanation: string;
-  hdurl: string;
-  media_type: string;
-  service_version: string;
-  title: string;
-  url: string;
-};
+import { FC } from 'react';
+import { useNasa } from '../utils/providers/ApiProvider';
 
 const Home: FC = () => {
-    const[data, setData] = useState<IData>();
-    const NasaKey = import.meta.env.VITE_NASA_KEY;
+  const data = useNasa();
 
-    useEffect(() => {
-      fetch("https://api.nasa.gov/planetary/apod?api_key="+NasaKey)
-        .then(res => res.json())
-        .then(data => setData(data));
-    }, []);
-
-        
   return (
-    <div>
-      <h1>{data?.title}</h1>
-      <p>{data?.explanation}</p>
-      <p>{data?.date}</p>
-      <p>{data?.copyright}</p>
-      <img src={data?.url} alt={data?.title} />
-    </div>
+      <div>
+        <h1>{data?.title}</h1>
+        <p>{data?.explanation}</p>
+        <p>{data?.date}</p>
+        <p>{data?.copyright}</p>
+        <img src={data?.url} alt={data?.title} />
+      </div>
   );
 };
 

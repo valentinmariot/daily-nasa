@@ -15,12 +15,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": ".",
     "paths": {
-      "@/vars": ["./src/styles/vars/index.scss"],
-      "@/fonts": ["./public/fonts/*"],
-      "@/components/*": ["./src/components/*"],
+      "@/vars": ["src/styles/vars/index.scss"],
+      "@/fonts/*": ["public/fonts/*"],
+      "@/components/*": ["src/components/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/globalStyles": ["src/styles/globals.scss"],
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/utils/types.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
