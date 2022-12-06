@@ -17,3 +17,39 @@ html {
     background: black;
   }
 } */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // width: 100vh;
+
+}
+
+.container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include smartphone {
+    width: 320px;
+  }
+  @include a4 {
+    width: 550px;
+  }
+  @include tablet {
+    width: 700px;
+  }
+  @include tablet-landscape {
+    width: 900px;
+  }
+  @include laptop {
+    width: 1000px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
