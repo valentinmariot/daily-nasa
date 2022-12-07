@@ -17,13 +17,10 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/vars": ["src/styles/vars/index.scss"],
-      "@/fonts/*": ["public/fonts/*"],
-      "@/components/*": ["src/components/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/globalStyles": ["src/styles/globals.scss"],
+      "@/*": ["./src/*"],
+      "@/types": ["./types.ts"],
     }
   },
-  "include": ["src", "src/utils/types.ts"],
+  "include": ["src", "types.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
