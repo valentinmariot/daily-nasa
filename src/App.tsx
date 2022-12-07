@@ -13,8 +13,8 @@ const App: FC = () => {
       <div className="container">
         <Router>
           <Navbar>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <Link to="/">/H O M E</Link>
+            <Link to="/about">/ A B O U T</Link>
           </Navbar>
           <Routes>
             <Route path="/" element={<Home />} />
