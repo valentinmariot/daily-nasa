@@ -1,0 +1,246 @@
+@import '../styles/vars/index.scss';
+
+.navbar {
+    align-items: center;
+    bottom: $--4m;
+    color: $--egg;
+    display: flex;
+    font-size: $--xs;
+    justify-content: center;
+    position: fixed;
+    transition: 0.7s;
+    width: 100%;
+    z-index: 666;
+}
+
+.inside {
+    max-width: 1920px;
+    transition: 0.7s;
+    width: 100%;
+}
+
+.float {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dn {
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    padding: 3px 15px; 
+    transition: 0.7s;
+    @include tablet {
+        cursor: default;   
+    }
+
+    &Open:after {
+        content: ' 🚀';
+        border-radius: 2px;
+        display: inline-block;
+        height: 25px;
+        margin-left: calc(3 * $--5m);
+        transition: 0.9s;
+        width: 17px;
+        @include tablet {
+            cursor: default;   
+            border-radius: 1px;     
+            height: 25px;
+            margin-left: 2px;
+            width: 6px;
+        }
+    }
+
+    &Closed:after {
+        content: ' 🚀';
+        border-radius: 1px;
+        display: inline-block;
+        height: 25px;
+        margin-left: 2px;
+        transition: 0.7s;
+        width: 6px;
+        @include tablet {
+            cursor: default;
+        }
+    }
+
+    &Button {
+        border: none;
+        background-color: transparent;
+        color: $--egg;
+        font-weight: bold;
+        @include glassMorphism(); 
+        @include tablet {
+            cursor: default;
+            @include glassMorphism(
+                $bg-color: transparent,
+                $blur: 0,
+                $border-color: transparent,
+                $boxShadow: none,
+            );
+        }
+    
+        &:hover {
+            cursor: pointer;
+            transition: 0.7s;
+            @include glassMorphism($bg-color: $--vanta45,);
+            @include tablet {
+                cursor: default;   
+                @include glassMorphism(
+                    $bg-color: transparent,
+                    $blur: 0,
+                    $border-color: transparent,
+                    $boxShadow: none,
+                );
+            }
+        }
+    }
+}
+
+.menu {
+    border-radius: 2px;
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        @include glassMorphism();
+    }
+
+    & a {
+        align-items: center;
+        border-radius: 3px;
+        color: $--egg;
+        display: flex;
+        justify-content: center;
+        padding: $--1m;
+        text-decoration: none;
+        width: 100%;
+        @include tablet {
+            background-color: $--vanta45;
+            border: 1px solid $--vanta20;
+            border-radius: 3px;
+            color: $--egg;
+            margin: 1px;
+            padding: 7px $--1m 3px;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $--primary;
+            background-color: $--vanta80;
+            transition: 0.3s;
+            @include tablet {
+                transition: 0.3s;
+            }
+        }
+
+        &:active {
+            background-color: $--vanta;
+            color: $--primary;
+            transition: 0.3s;
+        }
+    }
+
+    &Button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.7s;
+    
+        &Closed {
+            border-radius: 2px;
+            min-width: calc(2 * $--5m);
+            transition: 0.7s;
+        }
+    
+        &Open {
+            border-radius: 0 0 2px 2px;
+            min-width: calc(5 * $--5m);
+            transition: 0.7s;
+            @include tablet {
+                min-width: calc(2 * $--5m);
+            }
+        }
+    }
+
+    &Mobile{
+        &Open {
+            align-items: center;
+            animation-duration: 0.7s;
+            animation-name: open;
+            border-bottom: none;
+            border-radius: 2px 2px 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 0.7s;
+            padding: 5px;
+            @include glassMorphism(); 
+            @keyframes open {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+    
+        &Closed, &Closed a, &Closed div {
+            align-items: center;
+            animation-delay: 0.2s;
+            animation-duration: 0.9s;
+            animation-name: close;
+            justify-content: center;
+            transition: visibility, opacity, 0.5s;
+            visibility: hidden;
+            @keyframes close {
+                from {
+                    opacity: 0.5;
+                }
+                to {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    
+        &Open, &Closed {
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    &Right {
+        display: none;
+        @include tablet {
+            display: flex;
+        }
+    
+        &Links {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 1px;
+        }
+    }
+}
+
+.separator {
+    background-color: $--egg;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+.linkBox {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

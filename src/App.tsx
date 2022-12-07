@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { NasaDataProvider } from "./utils/providers/ApiProvider";
+import Navbar from "./components/Navbar";
 
 // Views
 import Home from "./views/Home";
@@ -11,11 +12,10 @@ const App: FC = () => {
     <NasaDataProvider>
       <div className="container">
         <Router>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-
+          <Navbar>
+            <Link to="/">/H O M E</Link>
+            <Link to="/about">/ A B O U T</Link>
+          </Navbar>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

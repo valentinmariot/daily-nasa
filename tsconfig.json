@@ -24,6 +24,6 @@
       "@/globalStyles": ["src/styles/globals.scss"],
     }
   },
-  "include": ["src", "src/utils/types.d.ts"],
+  "include": ["src", "src/utils/types.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
