@@ -1,0 +1,23 @@
+@import '../styles/vars/index.scss';
+
+.navbar {
+    background-color: $--vanta20;
+    border-radius: 2px;;
+    position: fixed;
+    bottom: $--1m;
+    @include glassMorphism();
+    &-links {
+        margin: 7px;
+        & a {
+            color: $--white;
+            text-decoration: none;
+            background-color: $--vanta45;
+            border-radius: 2px;
+            padding: $--1m $--2m;
+            &:hover {
+                background-color: $--vanta80;
+                color: $--secondary;
+            }
+        }
+    }
+}
