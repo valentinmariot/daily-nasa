@@ -1,8 +1,14 @@
+import NasaDatePicker from '../components/datePicker/NasaDatePicker';
 import { FC } from 'react';
 import { useNasa } from '../utils/providers/ApiProvider';
 
 const Home: FC = () => {
-  const data = useNasa();
+  const {data, selectDate, date } = useNasa();
+
+  const onDateChange = (date: Date) => {
+    selectDate(date);
+    // console.log(date);
+  }
 
   return (
       <div>
@@ -10,6 +16,11 @@ const Home: FC = () => {
         <p>{data?.explanation}</p>
         <p>{data?.date}</p>
         <p>{data?.copyright}</p>
+        <NasaDatePicker
+          startDate={new Date()}
+          selected={date}
+          onChange={onDateChange}
+        />
         <img src={data?.url} alt={data?.title} />
       </div>
   );

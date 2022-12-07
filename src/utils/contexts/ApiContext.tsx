@@ -1,6 +1,12 @@
 import { createContext } from 'react';
-import { NasaData } from '../types';
+import { IContext } from '@/types';
 
-const NasaContext = createContext<NasaData | null>(null);
+const defaultValues: IContext = {
+    data: undefined,
+    date: new Date(),
+    selectDate: () => {}
+};
+
+const NasaContext = createContext<IContext>(defaultValues);
 
 export { NasaContext };

@@ -7,7 +7,6 @@ interface INavbar {
 
 const Navbar: FC<INavbar> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log('isOpen', isOpen);
 
   return (
     <div className="navbar">
