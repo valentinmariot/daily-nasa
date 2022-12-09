@@ -1,11 +1,11 @@
 // --- F O N T S --- //
 
 // VARIABLES
-$--helvetica: 'Helvetica', sans-serif;
-$--roboto: 'Roboto', sans-serif;
-$--nicomoji: 'Nicomoji', sans-serif;
-$--punc: 'Punc', sans-serif;
-$--oscura: 'Oscura', sans-serif;
+$--helvetica: "Helvetica", sans-serif;
+$--roboto: "Roboto", sans-serif;
+$--nicomoji: "Nicomoji", sans-serif;
+$--punc: "Punc", sans-serif;
+$--oscura: "Oscura", sans-serif;
 
 // IMPORTS
 @font-face {
@@ -14,7 +14,7 @@ $--oscura: 'Oscura', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    src: url('./public/fonts/Helvetica.woff2') format('woff2');
+    src: url("/fonts/Helvetica.woff2") format("woff2");
 }
 
 @font-face {
@@ -23,7 +23,7 @@ $--oscura: 'Oscura', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    src: url('./public/fonts/Nicomoji.woff2') format('woff2');
+    src: url("/fonts/Nicomoji.woff2") format("woff2");
 }
 
 @font-face {
@@ -32,7 +32,7 @@ $--oscura: 'Oscura', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    src: url('./public/fonts/Oscura.woff2') format('woff2');
+    src: url("/fonts/Oscura.woff2") format("woff2");
 }
 
 @font-face {
@@ -41,7 +41,7 @@ $--oscura: 'Oscura', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    src: url('./public/fonts/Punc-Bold.woff2') format('woff2');
+    src: url("/fonts/Punc-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -50,7 +50,7 @@ $--oscura: 'Oscura', sans-serif;
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
-    src: url('./public/fonts/Roboto-Light.woff2') format('woff2');
+    src: url("/fonts/Roboto-Light.woff2") format("woff2");
 }
 
 // MAYBE ICOMOON ?
@@ -61,5 +61,5 @@ $--oscura: 'Oscura', sans-serif;
 //     font-style: normal;
 //     font-variant: normal;
 //     font-weight: normal;
-//     src: url('./fonts/oxeva-icon.woff') format('woff');
+//     src: url("./fonts/oxeva-icon.woff") format("woff");
 // }
