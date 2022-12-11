@@ -1,5 +1,5 @@
-@import './reset';
-@import './vars/index.scss';
+@import "./reset";
+@import "./vars/index.scss";
 
 html {
   color: $--main-font-color;
@@ -24,7 +24,6 @@ html {
   align-items: center;
   justify-content: center;
   // width: 100vh;
-
 }
 
 .container {

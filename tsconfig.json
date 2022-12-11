@@ -18,9 +18,16 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/types": ["./types.ts"],
+      "@/types": ["./types.ts"]
     }
   },
-  "include": ["src", "types.ts"],
+  "include": [
+    "vite.config.ts",
+    ".eslintrc.cjs",
+    "./src",
+    "types.ts",
+    "src/__tests__/index.test.tsx",
+    "test"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import React, { FC } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { NasaDataProvider } from "./utils/providers/ApiProvider";
-import Navbar from "./components/Navbar";
+import { NasaDataProvider } from "@/utils/providers/ApiProvider";
+import Navbar from "@/components/Navbar";
 
 // Views
 import Home from "./views/Home";
