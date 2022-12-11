@@ -1,7 +1,9 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { NasaDataProvider } from "@/utils/providers/ApiProvider";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 // Views
 import Home from "./views/Home";
@@ -10,6 +12,7 @@ import About from "./views/About";
 const App: FC = () => {
   return (
     <NasaDataProvider>
+      <Header />
       <div className="container">
         <Router>
           <Navbar>
@@ -22,6 +25,7 @@ const App: FC = () => {
           </Routes>
         </Router>
       </div>
+      <Footer />
     </NasaDataProvider>
   );
 };
