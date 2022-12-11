@@ -5,7 +5,7 @@ import NasaDatePicker from "@/components/datePicker/NasaDatePicker";
 const Home: FC = () => {
   const { data, selectDate, date } = useNasa();
 
-  const onDateChange = (date: Date) => {
+  const onDateChange = (e: e) => {
     selectDate(date);
     // console.log(date);
   };
