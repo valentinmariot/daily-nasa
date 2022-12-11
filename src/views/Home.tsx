@@ -21,14 +21,10 @@ const Home: FC = () => {
         />
       </div>
       <div className="home_title">
-        <h1 className="home_title_content">
-          {data?.title}
-        </h1>
+        <h1 className="home_title_content">{data?.title}</h1>
       </div>
       <div className="home_explanation">
-        <p className="home_explanation_content">
-          {data?.explanation}
-        </p>
+        <p className="home_explanation_content">{data?.explanation}</p>
       </div>
       <div className="home_media">
         {data?.media_type === "video" ? (
@@ -36,13 +32,10 @@ const Home: FC = () => {
             className="home_media_video"
             src={data?.url}
             title={data?.title}
-            allowFullScreen>
-          </iframe>
+            allowFullScreen
+          ></iframe>
         ) : (
-          <img className="home_media_img"
-            src={data?.url}
-            alt={data?.title}
-          />
+          <img className="home_media_img" src={data?.url} alt={data?.title} />
         )}
       </div>
       {data?.copyright && (

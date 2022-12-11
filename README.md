@@ -1,19 +1,20 @@
 # Daily Nasa 🚀
-      
+
 <details>
   <summary>Click to read the assignment</summary>     
-     <br> 
+     <br>
 
-Expectations :      
-- Create an app that use the APOD NASA Api => [NASA API](https://api.nasa.gov/),     
-- Show the daily image with his title and description,     
-- Use a date picker library to show linked content to the picked date      
-     
+Expectations :
+
+- Create an app that use the APOD NASA Api => [NASA API](https://api.nasa.gov/),
+- Show the daily image with his title and description,
+- Use a date picker library to show linked content to the picked date
+
 </details>
 
 ## Live version
 
-This project has been deployed with Vercel and you can [check it out here](https://daily-nasa.vercel.app/).   
+This project has been deployed with Vercel and you can [check it out here](https://daily-nasa.vercel.app/).
 
 ## Tooling
 
@@ -31,7 +32,7 @@ This project has been deployed with Vercel and you can [check it out here](https
 
 ## Develoment process
 
-⏱️ Did in 5 hours. 
+⏱️ Did in 5 hours.
 
 1. Bootstrap the project with `npm create vite@latest daily-nasa --template react-ts`.
 2. Setup folders structure and tsconfig.

@@ -8,7 +8,7 @@ const Header: FC = () => {
         <h1>DAILY NASA 🚀</h1>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Header;

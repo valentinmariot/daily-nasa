@@ -27,7 +27,7 @@ const NasaDataProvider: FC<IProps> = ({ children }) => {
       `https://api.nasa.gov/planetary/apod?date=${formattedDate}&api_key=${nasaKey}`
     )
       .then((response) => response.json())
-      .then((data) =>{
+      .then((data) => {
         setIsLoading(false);
         setData(data);
       })

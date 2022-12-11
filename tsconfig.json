@@ -15,13 +15,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["node"],
+    "types": ["node", "jest"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@/types": ["./types.ts"]
     }
   },
+
   "include": [
     "vite.config.ts",
     ".eslintrc.cjs",

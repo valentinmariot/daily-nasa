@@ -8,7 +8,7 @@ const Footer: FC = () => {
         <p>Dev' with 💛</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;

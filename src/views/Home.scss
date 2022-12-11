@@ -1,79 +1,77 @@
 @import "@/styles/vars/index";
 
 .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+
+  &_picker {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px 30px 20px 30px;
+    border-radius: 5px;
+    margin: $--3m;
+
+    @include glassMorphism($bg-color: $--vanta20);
+
+    @include tablet {
+      padding: 20px 0 30px 0;
+      width: 50%;
+    }
+  }
+
+  &_title {
+    font-size: $--m;
+    margin-bottom: $--3m;
+
+    @include tablet {
+      font-size: $--xl;
+    }
+  }
+
+  &_explanation {
+    font-size: $--s;
+    margin-bottom: $--3m;
+    text-align: justify;
+
+    @include tablet {
+      font-size: $--m;
+    }
+  }
+
+  &_copyright {
     align-items: center;
+    color: $--vanta80;
+    font-size: $--s;
+    font-weight: bold;
+    margin-bottom: $--3m;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
+
+  &_media {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    padding: 0 20px;
 
-    &_picker {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 30px 20px 30px;
-        border-radius: 5px;
-        margin: $--3m;
-
-        @include glassMorphism(
-            $bg-color: $--vanta20,
-        );
-
-        @include tablet {
-            padding: 20px 0 30px 0;
-            width: 50%;
-        }
+    &_video {
+      width: 100%;
+      height: 500px;
     }
 
-    &_title {
-        font-size: $--m;
-        margin-bottom: $--3m;
-
-        @include tablet {
-            font-size: $--xl;
-        }
+    &_img {
+      margin: $--3m;
+      border-radius: 3px;
+      box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
     }
-
-    &_explanation {
-        font-size: $--s;
-        margin-bottom: $--3m;
-        text-align: justify;
-
-        @include tablet {
-            font-size: $--m;
-        }
-    }
-
-    &_copyright {
-        align-items: center;
-        color: $--vanta80;
-        font-size: $--s;
-        font-weight: bold;
-        margin-bottom: $--3m;
-        display: flex;
-        justify-content: flex-end;
-        width: 80%;
-    }
-
-    &_media {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-
-        &_video {
-            width: 100%;
-            height: 500px;
-        }
-
-        &_img {
-            margin: $--3m;
-            border-radius: 3px;
-            box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
-        } 
-    }
+  }
 }

@@ -1,12 +1,12 @@
 @import "@/styles/vars/index";
 
 .header {
-    align-items: center;
-    border-bottom: 2px solid $--vanta20;
-    color: $--egg;
-    display: flex;
-    justify-content: center;
-    padding: $--1m;
-    width: 100%;
-    @include glassMorphism();
-} 
+  align-items: center;
+  border-bottom: 2px solid $--vanta20;
+  color: $--egg;
+  display: flex;
+  justify-content: center;
+  padding: $--1m;
+  width: 100%;
+  @include glassMorphism();
+}
