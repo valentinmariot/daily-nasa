@@ -11,12 +11,13 @@ export default defineConfig({
   server: {
     port: 1958,
   },
+  resolve: {
+    alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
+  },
   test: {
     globals: true,
     environment: "jsdom",
     setupFiles: ["./src/setupTest.ts"],
   },
-  resolve: {
-    alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
-  },
+  
 });
