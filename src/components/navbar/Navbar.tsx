@@ -14,7 +14,12 @@ const Navbar: FC<INavbar> = ({ children }) => {
         <div className="float">
           <div className="menu">
             <div className={`menuMobile${isOpen ? "Open" : "Closed"}`}>
-              {children}
+              <div
+                className="links"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {children}
+              </div>
             </div>
             <div className="menuButton">
               <button
