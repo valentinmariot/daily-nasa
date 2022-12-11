@@ -43,5 +43,6 @@ This project has been deployed with Vercel and you can [check it out here](https
 ## Potential improvements
 
 - I didn't have time to do a better UI so some part of the design could be improved.
-- Show loading effect until data has arrived.
+- Improve loading effect until data has arrived.
 - Add an error management system.
+- Add an auto translator system using the Google API.

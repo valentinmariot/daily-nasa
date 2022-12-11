@@ -1,0 +1,41 @@
+@import "@/styles/vars/index";
+
+.date_picker {
+    display: flex;
+}
+
+.react-datepicker__input-container input {
+    background-color: $--vanta80;
+    border: 2px solid $--vanta80 !important;
+    border-radius: 3px;
+    color: $--egg;
+    font-size: $--s;
+    padding: 2px;
+    transition: all 0.3s ease;
+    width: 100%;
+
+
+    @include tablet {
+        font-size: $--m;
+        padding: $--1m;
+    }
+
+    &:hover {
+        background-color: $--vanta45;
+        border: $--vanta80;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    &:focus {
+        background-color: $--vanta45;
+        transition: all 0.3s ease;
+    }
+}
+
+.react-datepicker__month-container {
+    background-color: $--vanta80;
+    border-radius: 5px;
+    color: $--egg;
+    transition: all 0.3s ease;
+}
