@@ -21,6 +21,12 @@
       "@/types": ["./types.ts"],
     }
   },
-  "include": ["./src", "types.ts", "src/__tests__/index.test.tsx", "test"],
+  "include": [
+    ".eslintrc.cjs",
+    "./src",
+    "types.ts",
+    "src/__tests__/index.test.tsx",
+    "test"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
