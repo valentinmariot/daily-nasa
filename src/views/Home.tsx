@@ -5,7 +5,7 @@ import NasaDatePicker from "@/components/datePicker/NasaDatePicker";
 const Home: FC = () => {
   const { data, selectDate, date } = useNasa();
 
-  const onDateChange = (e: e) => {
+  const onDateChange = (date: Date) => {
     selectDate(date);
     // console.log(date);
   };
@@ -16,7 +16,11 @@ const Home: FC = () => {
       <p>{data?.explanation}</p>
       <p>{data?.date}</p>
       <p>{data?.copyright}</p>
-      <NasaDatePicker onChange={onDateChange} selected={date} startDate={new Date()} />
+      <NasaDatePicker
+        onChange={onDateChange}
+        selected={date}
+        startDate={new Date()}
+      />
       <img src={data?.url} alt={data?.title} />
     </div>
   );

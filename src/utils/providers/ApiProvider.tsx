@@ -11,7 +11,9 @@ const NasaDataProvider: FC<IProps> = ({ children }) => {
   const nasaKey = import.meta.env.VITE_NASA_KEY;
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [data, setData] = useState<NasaData>();
-  const [formattedDate, setFormattedDate] = useState<string>(formatDate(selectedDate));
+  const [formattedDate, setFormattedDate] = useState<string>(
+    formatDate(selectedDate)
+  );
 
   const selectDate = (date: Date) => {
     // [TODO]: check if date is in the future
@@ -20,7 +22,9 @@ const NasaDataProvider: FC<IProps> = ({ children }) => {
   };
 
   useEffect(() => {
-    fetch(`https://api.nasa.gov/planetary/apod?date=${formattedDate}&api_key=${nasaKey}`)
+    fetch(
+      `https://api.nasa.gov/planetary/apod?date=${formattedDate}&api_key=${nasaKey}`
+    )
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error(error));

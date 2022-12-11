@@ -18,10 +18,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/types": ["./types.ts"],
+      "@/types": ["./types.ts"]
     }
   },
   "include": [
+    "vite.config.ts",
     ".eslintrc.cjs",
     "./src",
     "types.ts",

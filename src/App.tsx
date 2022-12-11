@@ -10,15 +10,15 @@ import About from "./views/About";
 const App: FC = () => {
   return (
     <NasaDataProvider>
-      <div className='container'>
+      <div className="container">
         <Router>
           <Navbar>
-            <Link to='/'>/ H O M E</Link>
-            <Link to='/about'>/ A B O U T</Link>
+            <Link to="/">/ H O M E</Link>
+            <Link to="/about">/ A B O U T</Link>
           </Navbar>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       </div>
