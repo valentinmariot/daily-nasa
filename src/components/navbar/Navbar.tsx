@@ -1,4 +1,4 @@
-import React, { FC, Children, ReactNode, useState } from "react";
+import { FC, Children, ReactNode, useState } from "react";
 import "./Navbar.scss";
 
 interface INavbar {
