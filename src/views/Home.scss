@@ -29,6 +29,7 @@
   &_title {
     font-size: $--m;
     margin-bottom: $--3m;
+    text-align: center;
 
     @include tablet {
       font-size: $--xl;

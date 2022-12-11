@@ -1,17 +1,22 @@
 @import "@/styles/vars/index";
 
 .about {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100vh;
+  justify-content: center;
   padding: 0 20px;
+  width: 100%;
+
+  @include a4 {
+    width: 100vh;
+  }
 
   &_title {
     font-size: $--m;
     margin-bottom: $--3m;
+    text-align: center;
 
     @include tablet {
       font-size: $--xl;
@@ -25,7 +30,7 @@
       justify-content: center;
       font-size: $--s;
       margin-bottom: $--3m;
-      // text-align: justify;
+      text-align: center;
 
       @include tablet {
         font-size: $--m;
