@@ -10,14 +10,22 @@
     padding: 0 20px;
 
     &_title {
-        font-size: $--xl;
+        font-size: $--m;
         margin-bottom: $--3m;
+
+        @include tablet {
+            font-size: $--xl;
+        }
     }
 
     &_explanation {
-        font-size: $--m;
+        font-size: $--s;
         margin-bottom: $--3m;
         text-align: justify;
+
+        @include tablet {
+            font-size: $--m;
+        }
     }
 
     &_picker {
@@ -26,7 +34,6 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-
     }
 
     &_copyright {
