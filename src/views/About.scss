@@ -1,0 +1,36 @@
+@import "@/styles/vars/index";
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+
+    &_title {
+        font-size: $--m;
+        margin-bottom: $--3m;
+
+        @include tablet {
+            font-size: $--xl;
+        }
+    }
+
+    &_content {
+    
+        & li{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: $--s;
+            margin-bottom: $--3m;
+            // text-align: justify;
+
+            @include tablet {
+                font-size: $--m;
+            }
+        }
+    }
+}

@@ -9,10 +9,16 @@
     border: 2px solid $--vanta80 !important;
     border-radius: 3px;
     color: $--egg;
-    font-size: $--m;
-    padding: $--1m;
+    font-size: $--s;
+    padding: 2px;
     transition: all 0.3s ease;
     width: 100%;
+
+
+    @include tablet {
+        font-size: $--m;
+        padding: $--1m;
+    }
 
     &:hover {
         background-color: $--vanta45;

@@ -9,6 +9,25 @@
     height: 100%;
     padding: 0 20px;
 
+    &_picker {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 30px 20px 30px;
+        border-radius: 5px;
+        margin: $--3m;
+
+        @include glassMorphism(
+            $bg-color: $--vanta20,
+        );
+
+        @include tablet {
+            padding: 20px 0 30px 0;
+            width: 50%;
+        }
+    }
+
     &_title {
         font-size: $--m;
         margin-bottom: $--3m;
@@ -26,14 +45,6 @@
         @include tablet {
             font-size: $--m;
         }
-    }
-
-    &_picker {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
 
     &_copyright {

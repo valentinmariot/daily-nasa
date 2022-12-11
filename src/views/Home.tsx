@@ -12,6 +12,14 @@ const Home: FC = () => {
 
   return (
     <div className="home">
+      <div className="home_picker">
+        <p>Pick a date:</p>
+        <NasaDatePicker
+          onChange={onDateChange}
+          selected={date}
+          startDate={new Date()}
+        />
+      </div>
       <div className="home_title">
         <h1 className="home_title_content">
           {data?.title}
@@ -22,19 +30,10 @@ const Home: FC = () => {
           {data?.explanation}
         </p>
       </div>
-      <div className="home_picker">
-        <NasaDatePicker
-          onChange={onDateChange}
-          selected={date}
-          startDate={new Date()}
-        />
-      </div>
       <div className="home_media">
         {data?.media_type === "video" ? (
           <iframe
             className="home_media_video"
-            // width="560"
-            // height="315"
             src={data?.url}
             title={data?.title}
             allowFullScreen>
