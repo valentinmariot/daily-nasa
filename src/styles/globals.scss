@@ -2,9 +2,9 @@
 @import "./vars/index.scss";
 
 html {
+  background-color: $--egg;
   color: $--main-font-color;
   font-family: $--helvetica;
-  background-color: $--egg;
   font-weight: 400;
 }
 
@@ -19,19 +19,18 @@ html {
 } */
 
 #root {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  // width: 100vh;
 }
 
 .container {
-  width: 320px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  width: 320px;
 
   @include smartphone {
     width: 400px;
