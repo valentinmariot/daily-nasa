@@ -32,10 +32,10 @@ This project has been deployed with Vercel and you can [check it out here](https
 
 ## Develoment process
 
-⏱️ Did in 5 hours.
+⏱️ Done in 5 hours.
 
 1. Bootstrap the project with `npm create vite@latest daily-nasa --template react-ts`.
-2. Setup folders structure and tsconfig.
+2. Set up folders structure and tsconfig.
 3. Build the UI w/ Sass.
 4. Add aliases for imports.
 5. Create the ApiProvider to facilitate data manipulation.
