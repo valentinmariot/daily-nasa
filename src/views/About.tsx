@@ -11,7 +11,7 @@ const About: FC = () => {
         <ul>
           <li>
             <p>
-              This is a simple app that uses the NASA API to display a picture
+              This is a simple app that uses the NASA API to display the picture
               of the day.
             </p>
           </li>
@@ -25,7 +25,7 @@ const About: FC = () => {
             </p>
           </li>
           <li>
-            <p>Feel free to send feedback or improvements!</p>
+            <p>Feel free to send feedback or improvement!</p>
           </li>
         </ul>
       </div>
